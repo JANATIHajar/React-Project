@@ -1,47 +1,72 @@
 import React from "react";
 import DashbordElement from "./DashbordElements";
 import 'bootstrap/dist/css/bootstrap.css';
+import NavbarHorizental from "../../Componenets/NavbarHorizental";
+import MenuVertical from "../../Componenets/MenuVertical";
 
 function Dashbord(){
     return(
-        <div className="grid lg:grid-cols-2 gap-3 p-10 h-72 w-full bg-gray-300 filter">
-            <DashbordElement
+        <main className="contents">
+        <NavbarHorizental/>
+    <MenuVertical/>
+        <div className="flex pt-10 pl-28 bg-gray-100 ">
+        <div className="row  space-y-4">
+            <div className="flex items-center justify-center "></div>
+            <div className="h-2.5 mx-4 my-3 dark:bg-gray-700  "></div>
+              <DashbordElement
                 info={
                     {
                         img:"/terrain/terrain1.jpg",
-                        name: "/icons/",
+                        type: "Artificiel",
+                        size: "6*6",
+                        prix: "400Dh",
                     }
                 }/>
             <DashbordElement
                 info={
                     {
                         img:"/terrain/terrain2.jpg",
-                        name: "terrain2",
+                        type: "Artificiel",
+                        size: "7*7",
+                        prix: "400Dh",
+
                     }
                 } />
             <DashbordElement
                 info={
                     {
                         img:"/terrain/terrain3.jpg",
-                        name: "terrain3",
+                        type: "Artificiel",
+                        size: "6*6",
+                        prix: "400Dh",
+
                     }
                 }/>
             <DashbordElement
                 info={
                     {
                         img:"/terrain/terrain4.jpg",
-                        name: "terrain4",
+                        type: "Artificiel",
+                        size: "6*6",
+                        prix: "300Dh",
+
                     }
                 } />
             <DashbordElement
                 info={
                     {
                         img:"/terrain/terrain5.jpeg",
-                        name: "terrain5",
+                        type: "Artificiel",
+                        size: "6*6",
+                        prix: "400Dh",
+
                     }
                 }
             />
+            </div>
         </div>
+        </main>
+
     )
 }
 export default Dashbord

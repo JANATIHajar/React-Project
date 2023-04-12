@@ -1,0 +1,37 @@
+.container-fluid {
+    height: 100vh;
+}
+
+.row {
+    height: 100%;
+}
+.text-gray-600 {
+    --tw-text-opacity: 1;
+    color: rgb(117 117 117 / var(--tw-text-opacity));
+
+}
+p a{
+    text-decoration: none;
+    --tw-text-opacity: 1;
+    color: rgb(117 117 117 / var(--tw-text-opacity));
+}
+p a:hover {
+    --tw-text-opacity: 1;
+    color: rgb(117 117 117 / var(--tw-text-opacity));
+    text-decoration: underline;
+}
+label{
+    color: darkolivegreen;
+}
+label:focus{
+    color: #8ade7d;
+
+}
+form input{
+    border-color: #125407;
+    box-shadow: darkgreen;
+}
+button{
+    width: 150px;
+     height: 35px;
+}

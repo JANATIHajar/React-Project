@@ -1,52 +1,48 @@
 import React from "react";
-import "./menu.css";
+
 
 const MenuVertical = () => {
     return (
-        <nav className="vertical-navbar">
-            <ul className="navbar">
-                <li >
-                    <a href="/" >
-                        <img src="../icons/soccer-field.png" alt="   "/>
+        <div className="fixed top-0">
+            <div className=" h-screen sticky min-w-[70px] px-2 py-3 flex flex-col bg-white border-r">
+                <ul className="flex-1 flex flex-col justify-around items-center">
+                    <li>
+                        <a href="/terrain" >
+                            <img  src="../icons/soccer-field.png" class="h-7 object-contain" alt="   "/>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="/client" >
+                            <img  src="../icons/clients.png"  class="h-7 object-contain" alt="   "/>
+                        </a>
+                    </li><li >
+                    <a href="/reservation" >
+                        <img  src="../icons/reservation.png" class="h-7 object-contain" alt="   "/>
                     </a>
-                </li>
-                <li >
-                    <a href="/client" >
-                        <img src="../icons/clients.png" alt="   "/>
-                    </a>
-                </li>
-                <li>
-                    <a href="/résérvation" >
-                        <img src="../icons/reservation.png" alt="   "/>
-                    </a>
-                </li>
-                <li>
+                </li><li >
                     <a href="/calendrie" >
-                        <img src="../icons/calendar.png" alt="   "/>
+                        <img  src="../icons/calendar.png" class="h-7 object-contain" alt="   "/>
                     </a>
-                </li>
-                <li>
+                </li><li >
                     <a href="/revue" >
-                        <img src="../icons/review.png" alt="   "/>
+                        <img  src="../icons/review.png" class="h-7 object-contain" alt="   "/>
                     </a>
-                </li>
-                <li>
-                    <a href="/statistique" >
-                        <img src="../icons/graph.png" alt="   "/>
+                </li><li >
+                    <a href="/statistiquee" >
+                        <img  src="../icons/graph.png"class="h-7 object-contain"  alt="   "/>
                     </a>
-                </li>
-                <li>
-                    <a href="/abonnement">
-                        <img src="../icons/money.png" alt="   "/>
+                </li><li >
+                    <a href="/abonnements" >
+                        <img  src="../icons/money.png" class="h-7 object-contain" alt="   "/>
                     </a>
-                </li>
-                <li>
+                </li><li >
                     <a href="/codeQR" >
-                        <img src="../icons/qr-code.png" alt="   "/>
+                        <img  src="../icons/qr-code.png" class="h-7 object-contain" alt="   "/>
                     </a>
                 </li>
-            </ul>
-        </nav>
+                </ul>
+            </div>
+        </div>
     );
 };
 
